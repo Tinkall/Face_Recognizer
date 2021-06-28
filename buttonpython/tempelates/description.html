@@ -1,0 +1,51 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>My test page</title>
+
+     <link rel="stylesheet" type="text/css"
+        href="{% static 'css/description.css' %}">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <h1>FACE RECOGNIZER</h1>
+    <h2> About Face Detection ANd Recognition system</h2>
+
+    <p>Face Detection and Recognition System (FDRS) is a physical
+characteristics recognition technology, using the inherent physiological
+features of humans for ID recognition. The technology does not need to be
+carried about and will not be lost, so it is convenient and safe for use
+</p>
+
+
+     <h2>The Problem Statement</h2>
+    <p>Given still or video images of a scene, identify or verify person in the scene
+using a stored database of faces.</p>
+
+
+    <h2>Major objectives</h2>
+
+    <ul> <!-- changed to list in the tutorial -->
+      <li> Save Images To Database
+</li>
+      <li> Detect Faces
+</li>
+      <li>Match detected faces to Database</li>
+      <li>Recognize Faces</li>
+
+    </ul>
+
+
+    <p></p>
+
+
+   <div class="center_body">
+
+  <a href="{% url 'Home' %}" > go to homepage</a>
+ </div>
+
+  </body>
+</html>

@@ -1,0 +1,118 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+<title>
+  </title>
+
+  <link rel="stylesheet" type="text/css"
+        href="{% static 'css/style.css' %}">
+
+
+
+        <style type="text/css">
+
+            a:link, a:visited {
+  background-color: #f44336;
+  color: white;
+  padding: 14px 25px;
+
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: red;
+}
+
+
+  </style>
+
+  </head>
+  <body>
+   <header class="site-header">
+    <nav>
+      <div class="logo">
+        <h1> FACE RECOGNIZER</h1>
+      </div>
+      <div class="menu">
+          <ul>
+              <li>  <a href="{% url 'home' %}" >Home </a> </li>
+               <li> Detection</li>
+                <li> About us </li>
+                 <li><a href="{% url 'desc' %}"> Description </a></li>
+          </ul>
+      </div>
+
+    </nav>
+
+    <section>
+
+
+
+
+         <div class="leftside">
+
+
+
+          <button onclick="location.href='{%  url 'takesample' %}'"> TAKE SAMPLES </button>
+
+
+<br>
+  <button onclick="location.href='{%  url 'train_and_recognize' %}'"> TRAIN AND Recognize </button>
+   {% if data %}
+
+    {{dataa }}
+   {{"successs"}}
+
+   {% endif %}
+
+
+    </div>
+
+
+
+
+
+    <div class="rightside">
+      <h1> Motion Detection </h1>
+
+
+          <button onclick="location.href='{%  url 'motion_detection' %}'"> detect motion </button>
+   {% if data %}
+     {{data}}
+
+   {% endif %}
+
+<br>
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </section>
+
+
+
+
+   </header>
+
+
+
+  </body>
+
+</html>
